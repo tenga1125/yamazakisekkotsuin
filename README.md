@@ -1,0 +1,3 @@
+# yamazakisekkotsuin
+# yamazaki-sekotsuin
+# yamazakisekkotsuin
