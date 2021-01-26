@@ -1,0 +1,58 @@
+.wf3 {
+  color: #ffffff;
+}
+.ryokin img {
+    width: 660px;
+    height: 339px;
+    vertical-align: bottom;
+}
+.r-title  {
+  margin: 40px auto 30px;
+}
+.content-text {
+  text-align: left;
+  width: 620px;
+  margin: 0 auto;
+}
+
+#midashi h1 {
+  position: absolute;
+  top: 12px;
+  left: 40px;
+}
+
+.ryokinhyo {
+  width: 546px;
+  background-color: #fff;
+  padding: 45px 50px 20px;
+  margin: 30px auto 135px;
+}
+.ryokin-tbl {
+  font-size: 18px;
+}
+.ryokin-tbl td:first-child {
+  width: 360px;
+  text-align: left;
+  padding-left: 10px;
+}
+.ryokin-tbl td {
+  padding-bottom: 22px;
+  text-align: right;
+  width: 180px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+.ryokin-chui {
+  margin: 10px 0;
+  padding-left: 2em;
+  list-style: none;
+}
+.fc-red {
+  color: #ba4242;
+}
+.fs14px {
+  font-size: 14px;
+}
+.ryokin_chu li {
+  position: relative;
+}

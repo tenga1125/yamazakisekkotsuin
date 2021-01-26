@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デリバリー診察</title>
+  <link rel="stylesheet" href="css/sejyutu.css">
+  <link rel="stylesheet" href="css/kotsuban.css">
+  <link rel="stylesheet" href="css/kata-koshi.css">
+  <link rel="stylesheet" href="css/sh-sejyutu.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/second.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLWTB0L96F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MLWTB0L96F');
+  </script>
+  
+</head>
+<body>
+
+  <header>
+    
+    <div class="container">
+      <h1 id="header_logo">
+        <img src="img/logo/sk-logo-new.png" alt="" class="">
+      </h1>
+    </div>
+
+
+    <!-- ハンバーガーメニュー２ -->
+    <div id="barger">
+      <div class="circle icon">
+        <span class="bar topp"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </div>
+    </div>
+    
+    <!-- ナビバー０ -->
+    <nav id="nav0" class="nav0 wf1">
+      <ul class="nav-0">
+        <li class="big top">
+          <a class="home under3" href="home">
+            <img src="img/menu/home.png" alt="">
+            HOME
+          </a>
+        </li>
+        <li class="big">
+          <a href="sejyutu.html" class=" sejyutu under3" >
+            <img src="img/menu/bone3.png" alt="">施術内容
+          </a>
+          <ul class="sponly">
+            <li class="mini">
+              <a href="kotsuban.html" class="kotsuban" >
+                骨盤・骨格矯正
+              </a>
+            </li>
+            <li class="mini">
+              <a href="kata-koshi.html" class="kata-koshi" >
+                肩・腰・痛みの早期改善
+              </a>
+            </li>
+            <li class="mini">
+              <a href="deribary.html" class="deribary" >
+                デリバリー診察
+              </a>
+            </li>
+            <li class="mini">
+              <a href="kotsujiko.html" class="kotsujiko" >
+                交通事故治療
+              </a>
+            </li>
+            <li class="mini">
+              <a href="iroiro.html" class="iroiro" >
+                その他施術
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="big">
+          <a href="innai.html" class="under3 innaisyokai" >
+            <img src="img/menu/to.png" alt="">
+            院内紹介
+          </a>
+        </li>
+        <li class="big">
+          <a href="ryokin.html" class="under3 ryokin" >
+            <img src="img/menu/money.png" alt="">
+            料金メニュー
+          </a>
+        </li>
+        <li class="big">
+          <a href="profile.html" class="under3 profile" >
+            <img src="img/menu/profile.png" alt="">
+            プロフィール 
+          </a>
+        </li>
+        <li class="big">
+          <a href="access.html" class="under3 access" >
+            <img src="img/menu/access.png" alt="">
+            アクセス
+          </a>
+        </li>
+        <li class="big">
+          <a href="contact.html" class="under3 contact" >
+            <img src="img/menu/contact.png" alt="">
+            Contact
+          </a>
+        </li>
+      </u>
+    </nav>
+    
+    <!-- ナビバー１ -->
+    <nav class="nav menu wf1 ">
+      <ul class="nav-1">
+        <li>
+          <a href="home" class="home ">
+            <img src="img/menu/home.png" alt="" class="">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="sejyutu.html" class="sejyutu under3">
+            <img src="img/menu/bone3.png" alt="">
+            施術内容
+          </a>
+        </li>
+        <li>
+          <a href="innai.html" class="innaisyokai  under3">
+            <img src="img/menu/to.png" alt="">
+            院内紹介
+          </a>
+        </li>
+        <li>
+          <a href="ryokin.html" class="ryokin under3">
+            <img src="img/menu/money.png" alt="">
+            料金メニュー
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="profile under3">
+            <img src="img/menu/profile.png" alt="">
+            プロフィール
+          </a>
+        </li>
+        <li>
+          <a href="access.html" class="access under3">
+            <img src="img/menu/access.png" alt="">
+            アクセス
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="contact under3">
+            <img src="img/menu/contact.png" alt="">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- ナビバー２ -->
+      <nav class="nav menu clone fixed">
+        <ul>
+          <li>
+            <a href="#" class="home active under3">
+              <img src="img/menu/home.png" alt="">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="sejyutu.html" class="under3">
+              <img src="img/menu/bone3.png" alt="">
+              施術内容
+            </a>
+          </li>
+          <li>
+            <a href="innai.html" class="under3">
+              <img src="img/menu/to.png" alt="">
+              院内紹介
+            </a>
+          </li>
+          <li>
+            <a href="ryokin.html" class="under3">
+              <img src="img/menu/money.png" alt="">
+              料金メニュー
+            </a>
+          </li>
+          <li>
+            <a href="profilr.html" class="under3">
+              <img src="img/menu/profile.png" alt="">
+              プロフィール
+            </a>
+          </li>
+          <li>
+            <a href="access.html" class="under3">
+              <img src="img/menu/access.png" alt="">
+              アクセス
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="under3">
+              <img src="img/menu/contact.png" alt="">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+  </header>
+
+
+
+
+
+  <main>
+    <div id="content">
+
+      <div id="bread" class="">
+        <span>
+          <a href="index.html" class="under2 padding_lr_15px">
+            <span>HOME</span>
+          </a>
+        </span>
+        ＞
+        <span>
+          <a href="sejyutu.html" class="under2 padding_lr_15px">
+            <span>施術内容</span>
+          </a>
+        </span>
+        ＞
+        <span>
+          <span>デリバリー診察</span>
+        </span>
+      </div>
+
+
+      <div class="flex">
+        <div class="container main">
+
+          <div class="main_content">
+            <!-- 骨盤矯正img -->
+            <section id="midashi" class="load-up kado ">
+              <div class="midashi_title">
+                <div class="midashi_title_logo">
+                  <img src="img/menu/car.png" alt="">
+                </div>
+                <div class="midashi_title_moji-2">
+                  <img src="img/word/deribari_moji.png" alt="">
+                </div>
+              </div>
+                <div class="midashi_cmt">
+                  <ul class="list_aomaru">
+                    <li>お年寄りで接骨院まで行くのが困難</li>
+                    <li>自宅で何らかの怪我をしてしまい、接骨院まで行く自信がない</li>
+                    <li>接骨院に通う時間がない</li>
+                    <li>接骨院までの交通手段がない</li>
+                    <li>急ぎで診察して欲しい</li>
+                  </ul>
+                </div>
+            </section>
+
+            <p class="setsumei">
+              骨格と筋肉に精通した柔道整復師（国家資格）が、お客様の自宅に出向いて診察するサービスです。当院まで通うことが困難なお年寄りの方でも安心して治療を受けていただけます。<span class="fcolor_red">
+                尚こちらの診察に関しましては事前予約していただいております。
+              </span>
+            </p>
+    
+            <h2>
+              デリバリー診察の流れ
+            </h2>
+
+            <p class="content_text">
+              「デリバリー診察」の営業時間は整骨院と異なります。
+              <br>
+              あらかじめお電話などでお問い合わせください。
+              <br><br>
+              <span class="fcolor_red">
+                【月〜土】　12:30〜14:30
+              </span>
+              <br>
+            </p>
+            <p class="content_text">
+              以下の流れに沿って診察を受けていただきます。
+            </p>
+
+            <section class="step_setsumei">
+              <section class="step_setsumei_box fadein">
+                <div class="setsumei_text">
+                  <div class="onebox kado">
+                    <p>
+                      お電話などで診察の事前予約をしていただきます。その際に、痛みのある箇所の症状や経緯などをいくつか質問させていただきます。
+                    </p>
+                  </div>
+                  <div class="step_icon fadein">
+                    <img src="img/illust/number1.png" alt="">
+                  </div>
+                </div>
+              </section>
+              <section class="step_setsumei_box fadein">
+                <div class="setsumei_text">
+                  <div class="onebox kado">
+                    <p>
+                      ご予約していただいた日時にご自宅に伺います。
+                    </p>
+                  </div>
+                  <div class="step_icon fadein">
+                    <img src="img/illust/number2.png" alt="">
+                  </div>
+                </div>
+              </section>
+              <section class="step_setsumei_box fadein">
+                <div class="setsumei_text">
+                  <div class="onebox kado">
+                    <p>
+                      ご予約の際に伺った内容をもとに、患者様に合わせた診察・治療を受けていただけます。
+                    </p>
+                  </div>
+                  <div class="step_icon fadein">
+                    <img src="img/illust/number3.png" alt="">
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+
+
+          <!-- サイドメニュー -->
+          <div class="side">
+              
+            <div class="side_content">
+    
+              <div id="side" class="fix_side_content">
+    
+                <!-- サイドメニュー①施術情報 -->
+                <div id="side_nav" class="pconly">
+                  <ul>
+                    <li>
+                      <a href="kotsuban.html">
+                        <div class="icon icon1">
+                          <img src="img/menu/bone3.png" alt="">
+                        </div>
+                        <div class="title nav1 under2">
+                          <img src="img/word/kotuban_moji.png" alt="骨盤・骨格矯正">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="kata-koshi.html">
+                        <div class="icon icon2">
+                          <img src="img/menu/musimegane.png" alt="">
+                        </div>
+                        <div class="title nav2 under2">
+                          <img src="img/word/soukikaizen_moji.png" alt="肩・腰・痛みの根本治療">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="deribary.html">
+                        <div class="icon icon3">
+                          <img src="img/menu/car.png" alt="">
+                        </div>
+                        <div class="title nav3 under2">
+                          <img src="img/word/deribari_moji.png" alt="デリバリー診察">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="kotsujiko.html">
+                        <div class="icon icon4">
+                          <img src="img/menu/kotujiko.png" alt="">
+                        </div>
+                        <div class="title nav4 under2">
+                          <img src="img/word/koutujiko_moji.png" alt="交通事故治療">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="iroiro.html">
+                        <div class="icon icon5 under2">
+                          <img src="img/menu/iroiro.png" alt="">
+                        </div>
+                        <div class="title nav5 under2">
+                          <img src="img/word/iroiro_moji.png" alt="その他施術">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- コンタクト情報 -->
+                <div id="contact_info">
+                
+                  <div class="contact_area">
+                    <div class="yoyaku">
+                      <div class="title wf2 typesquare_tags typesquare_tags">
+                        お問い合わせ
+                      </div>
+                      <div class="btn_area">
+                        <a class="btn_line" href="https://line.me/ti/p/NKaXrd3W7S" target="_blank">
+                          <span class=" dekame">
+                            ご予約・お問合せ
+                          </span>
+                          <span class="hosoku">
+                            休診日や受付時間外も対応
+                          </span>
+                        </a>
+                        <a class="btn_tel" href="tel:0862626150" target="_blank">
+                          <span class=" dekame">
+                            0766-25-7179
+                          </span>
+                          <span class="hosoku">
+                            電話に出られない場合があります
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="uketsuke wf2">
+                      【受付】     8:00-12:00 15:00-19:45<br>
+                      【休診】     日曜・祝日
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+  <footer>
+    
+    <div class="footer_container">
+      <div class="footer_content">
+
+        <div class="footer_info">
+          <div class="footer_logo">
+            <img src="img/menu/fotter-logo.png" alt="">
+          </div>
+          <div class="eigyo">
+            <img src="img/menu/eigyo.png" alt="">
+          </div>
+          <div  class="tel_add">
+            <div class="tel">
+              <img src="img/menu/tell.png" alt="">
+              <span class="fs12px">（施術中は電話に出れない場合があります）</span>
+            </div>
+            <div class="add fs13px">
+              <a class="under" href="access.html">
+                高岡市上北島３１−２
+              </a>
+              <br>
+              駐車場あり（3台）
+            </div>
+          </div>
+        </div>
+        <a href="access.html">
+          <div id="map_footer">
+            <img src="img/menu/map.png" alt="">
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Topに戻る -->
+    <div id="page_top">
+      <a id="page_top" href="#">
+        <img src="img/logo/sankaku.png" alt="">
+      </a>
+    </div>
+
+  </footer>
+
+  
+</body>
+</html>

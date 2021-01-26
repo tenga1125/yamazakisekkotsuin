@@ -1,0 +1,46 @@
+@media screen and (max-width: 480px) {
+
+  #midashi img {
+    margin-bottom: 25px;
+  }
+  .setsumei {
+    width: auto;
+  }
+  .incho {
+    margin-left: 0;
+    margin-bottom: auto;
+    width: auto;
+  }
+  .incho .photo {
+    float: left;
+    width: 50%;
+  }
+  .kado {
+    border-radius: 20px;
+  }
+  .incho .txt {
+    float: right;
+    width: 40%;
+    margin: 5px;
+    /* width: 655px; */
+    margin: 0 auto;
+    /* margin: 40px 20px 200px; */
+    font-size: 10px;
+  }
+  .name {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.furigana {
+  vertical-align: middle;
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,1078 @@
+body {
+  font-family: Verdana,”Hiragino Kaku Gothic ProN”,”游ゴシック”,YuGothic,Meiryo,sans-serif;
+  background-image: url(../img/logo/bg-new.jpg);
+  background-attachment: fixed;
+  color: #666666;
+  min-width: 1080px;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrap {
+  /* overflow: hidden; */
+}
+
+header {
+  position: relative;
+  height: 420px;
+}
+/* ヘッダーロゴ */
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 0 40px;
+}
+#header_logo {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+#header_logo img {
+  width: 300px;
+  height: auto;
+}
+
+
+@media screen and (min-width: 480px) {
+  .nav0 {
+    display: none;
+  }
+}
+
+/* ナビバー０ */
+.nav0 {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 500;
+  padding: 70px 15px 50px;
+  box-sizing: border-box;
+  overflow: scroll;
+  /* -webkit-overflow-scrolling: touch; */
+}
+.nav-0 {
+  width: auto;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+.nav0 >ul li {
+  display: block;
+}
+.top {
+  border-top: 1px dashed #8f8f8f;
+}
+.big {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #8f8f8f;
+  float: none;
+}
+.nav0 ul li a {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 16px;
+  letter-spacing: .1em;
+  color: #8f8f8f;
+}
+.nav0 ul li img {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.sponly {
+  display: inherit;
+  list-style: none;
+}
+.mini {
+  border-top: 1px dashed #a8bdbc;
+}
+.mini {
+  margin-left: 28px;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  border-bottom: none;
+  border-top: 1px dashed #a8bdbc;
+  padding: 0 0 0 9px;
+}
+
+/* ナビバー1 */
+nav.menu {
+  width: 100%;
+  width: 965px;
+  height: 95px;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  padding-top: 10px;
+}
+nav.menu .nav-1 {
+  width: 756px;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+.wf1 {
+  font-family: 'Wawati SC',sans-serif;
+}
+nav.menu:not(.clone) ul li:first-child {
+    display: none;
+}
+
+/* バウンド */
+.menu ul li a img:hover{
+  animation: bound 2s infinite;
+}
+@keyframes bound {
+  0% { transform:translateY(0) }
+  5% { transform:translateY(0) }
+  10% { transform:translateY(0) }
+  20% { transform:translateY(-15px) }
+  25% { transform:translateY(0) }
+  30% { transform:translateY(-10px) }
+  50% { transform:translateY(0) }
+  100% { transform:translateY(0) }
+}
+
+/* ナビバー2 */
+.menu.clone{
+  left: 0px;
+  position: fixed;
+  top: -200px;
+  width: 100%;
+  /* background-color: #fff; */
+  background-image: url(../img/logo/bg-new-2.png);
+  height: 95px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  margin: 0 auto;
+  padding-top: 10px;
+  overflow: hidden;
+  z-index: 999;
+  font-family: 'Wawati SC',sans-serif;
+  transition: 0.2s;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav.menu ul {
+  width: 900px;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+.menu ul li {
+  width: 102px;
+  margin: 5px 12px 0;
+  padding: 10px 0 10px;
+  float: left;
+}
+.menu ul li a {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+a {
+  transition-duration: 0.4s;
+  color: #333333;
+  /* color: #144d62; */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* ナブメニューカレント表示 */
+nav.menu.clone ul li a.active:after {
+  bottom: -2px;
+  left: 20px;
+}
+nav.menu ul li a.active:after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #333333;
+  /* background-color: #435b5b; */
+  position: absolute;
+  bottom: -2px;
+  left: calc(50% - 30px);
+  z-index: -3;
+}
+.under3:hover::before {
+  content: "";
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff263;
+  bottom: -2px;
+  left: 0;
+  z-index: -2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.under2:hover::before {
+  content: "";
+  height: 12px;
+  width: 120%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff263;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.under4:hover::before {
+  content: "";
+  height: 12px;
+  width: 100%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff263;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* ナブロゴ画像 */
+nav.menu ul li img:first-child {
+  width: 50px;
+  height: auto;
+  margin-bottom: 7px;
+}
+nav.menu ul li img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.bone {
+  width: 600px;
+}
+
+
+
+/* モノクロ変更 */
+.mono {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  }
+  .mono:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: 0.7s;
+  }
+
+
+
+
+/* メイン */
+
+#bread {
+  width: 1010px;
+  color: #8f8f8f;
+  background-color: rgba(97, 91, 91, 0.05);
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin: 35px auto 40px;
+  font-size: 14px;
+}
+#bread a {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  text-decoration: none;
+  color: #8f8f8f;
+  z-index: 2;
+}
+
+/* 文字 */
+.wf2 ,h2 ,h3 ,.wf3 ,.name ,.uketsuke ,.btn_area{
+  font-family:'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN';
+}
+/* 角 */
+.kado {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+.main {
+  height: auto;
+}
+/* 施術内容-１*/
+.container {
+  margin: 15px auto 0 auto;
+  width: 1000px;
+  /* overflow: hidden; */
+  padding: 0 40px;
+}
+.main_content {
+  float: right;
+}
+#midashi {
+  width: 655px;
+  margin: 0 auto ;
+  position: relative;
+}
+#midashi img {
+  width: 100%;
+  height: 350px;
+  border: 10px solid #444444;
+}
+#midashi h1 {
+  position: absolute;
+  top: 12px;
+  right: 40px;
+}
+#midashi h1 {
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: 8px;
+  line-height: 1.5;
+  margin: 2px 0;
+}
+.mojiw {
+  color: #fff;
+}
+
+
+.midashi_title {
+  background-color: rgba(93, 100, 100, 0.1);
+  height: 70px;
+  padding: 20px 25px 10px;
+  vertical-align: bottom;
+}
+#midashi .midashi_title_logo {
+  float: left;
+  height: 80%;
+}
+#midashi .midashi_title_logo img {
+  height: 100%;
+  width: auto;
+  border: none;
+  padding-left: 10px;
+}
+#midashi .midashi_title_moji img {
+  height: 100%;
+  width: 70%;
+  border: none;
+  padding-left: 15px;
+}
+#midashi .midashi_title_moji-1 {
+  height: 80%;
+}
+#midashi .midashi_title_moji-1 img {
+  height: 100%;
+  width: 70%;
+  border: none;
+  padding-left: 15px;
+}
+#midashi .midashi_title_moji-2 {
+  height: 80%;
+}
+#midashi .midashi_title_moji-2 img {
+  height: 100%;
+  width: 60%;
+  border: none;
+  padding-left: 15px;
+}
+
+
+
+
+/* ロード時フェードアップ */
+.load-up.done {
+  opacity: 1 ;
+  transform: translate(0, 0);
+}
+.load-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+/* 施術コンセプト-タイトル */
+h2 {
+  background-color: rgba(93, 100, 100, 0.1);
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 70px auto 0;
+}
+
+/* 施術コンセプト-内容 */
+.concept {
+  margin: 50px auto 50px;
+  width: 620px;
+}
+.concept .concept_title {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.concept .concept_title div {
+  float: left;
+}
+.concept .concept_title .icon img {
+  width: 55px;
+  height: 55px;
+  vertical-align: bottom;
+}
+.concept .concept_title .title {
+  margin-left: 35px;
+  padding-top: 10px;
+  font-size: 26px;
+  color: #333333;
+  letter-spacing: 1px;
+}
+.concept .exp {
+  margin-top: 10px;
+  display: table;
+}
+.concept .exp .image {
+  display: table-cell;
+  width: 300px;
+  text-align: center;
+  vertical-align: top;
+}
+.concept .exp .image-1 img {
+  width: 230px;
+  height: 230px;
+  vertical-align: bottom;
+  margin-top: 10px;
+}
+.concept .exp .image-3 img {
+  width: 260px;
+  height: 230px;
+  vertical-align: bottom;
+  margin-top: 10px;
+}
+.concept .exp .text {
+  width: 300px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+p {
+  text-align: justify;
+}
+
+
+  /* フェードイン */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+  }
+/* フェードイン */
+.fadein.active{
+  opacity : 1;
+  transform : translate(0, 0);
+}
+.kadomaru {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.fs18px {
+  font-size: 18px;
+}
+.under {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+.under::before {
+  content: "";
+  height: 12px;
+  width: 100%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff263;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.under:hover::before {
+  background-color: #ffd563;
+  transition: 0.5s;
+}
+.under2:hover::before {
+  content: "";
+  height: 12px;
+  width: 100%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff263;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.padding_lr_15px {
+  padding: 0 15px;
+}
+
+/* 治療リスト */
+.chiryo_list {
+  margin-bottom: 140px;
+}
+.kadomaru img {
+  vertical-align: bottom;
+}
+
+/* ２ボックス */
+.chiryo_list .yoko2box {
+  width: 600px;
+  overflow: hidden;
+  margin: 30px auto 30px;
+}
+.chiryo_list .yoko2box .float_l {
+  width: 255px;
+  float: left;
+  margin: 0 22px;
+}
+.chiryo_list .yoko2box a {
+  display: block;
+  margin: 0 10px;
+  position: relative;
+  z-index: 4;
+}
+.chiryo_list .chiryo_syurui {
+  border: 4px solid #333333;
+  padding: 20px 5px 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.chiryo_list .chiryo_syurui .icon {
+  height: 65px;
+  padding-bottom: 15px;
+}
+.chiryo_list .chiryo_syurui .icon img {
+  width: auto;
+}
+.chiryo_list .chiryo_syurui .title img {
+  height: 22px;
+  width: auto;
+}
+/* アイコン */
+.chiryo_list .chiryo_1 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+.chiryo_list .chiryo_2 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+.chiryo_list .chiryo_3 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+.chiryo_list .chiryo_8 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+.chiryo_list .chiryo_9 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+.chiryo_list .chiryo_10 .icon img {
+  height: 55px;
+  margin-top: 5px;
+}
+/* タイトル */
+.chiryo_list .chiryo_1 .title img {
+  width: 180px;
+}
+.chiryo_list .chiryo_2 .title img {
+  width: 200px;
+}
+.chiryo_list .chiryo_3 .title img {
+  width: 150px;
+}
+.chiryo_list .chiryo_8 .title img {
+  width: 145px;
+}
+.chiryo_list .chiryo_9 .title img {
+  width: 145px;
+}
+.chiryo_list .chiryo_10 .title img {
+  width: 150px;
+}
+
+
+
+
+/* サイドメニュー */
+.side {
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  height: 755px;
+  width: 30%;
+  margin-bottom: 70px;
+}
+.side_content {
+  width: 310px;
+  float: left;
+}
+#side_nav {
+  margin-bottom: 60px;
+}
+#side_nav ul {
+  border-top: 1px dashed #ccbd96;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#side_nav ul li {
+  height: 66px;
+  border-bottom: 1px dashed #ccbd96;
+}
+#side_nav ul li a {
+  display: block;
+  height: 36px;
+  padding: 15px 0 15px 20px;
+  overflow: hidden;
+}
+#side_nav ul li a div.icon {
+  width: 35px;
+  text-align: center;
+}
+#side_nav ul li a div {
+  float: left;
+}
+/* アイコン */
+#side_nav ul li a div.icon img {
+  height: 34px;
+  width: auto;
+}
+/* タイトル */
+#side_nav ul li a div.title {
+  margin-left: 25px;
+  padding-top: 9px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+#side_nav ul li a div.title img {
+  height: 21px;
+  width: auto;
+}
+#side_nav ul li a div.nav1 img {
+  width: 156px;
+}
+#side_nav ul li a div.nav2 img {
+  width: 195px;
+}
+#side_nav ul li a div.nav3 img {
+  width: 148px;
+}
+#side_nav ul li a div.nav4 img {
+  width: 138px;
+}
+#side_nav ul li a div.nav5 img {
+  width: 135px;
+}
+
+
+  /* コンタクト情報 */
+  #contact_info {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  #contact_info .yoyaku .btn_area {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* お問い合わせ */
+  #contact_info .yoyaku .title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  #contact_info .yoyaku .title::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFF263;
+    border-radius: 100%;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    z-index: -1;
+  }
+  /* ボタン */
+  #contact_info .yoyaku .btn_area {
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact_info .yoyaku .btn_area a {
+    letter-spacing: .1px;
+  }
+  #contact_info .yoyaku .btn_area a {
+    width: 49%;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 10px 0;
+    transition: .3s;
+  }
+  #contact_info .yoyaku .btn_area a .hosoku {
+    font-size: 5px;
+    display: block;
+  }
+  /* ライン */
+  #contact_info .yoyaku .btn_area .btn_line {
+    /* background-color: #888; */
+    background-color: #26B740;
+  }
+  #contact_info .yoyaku .btn_area .btn_line::before {
+    content: url(../img/logo/line-mini.png);
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    /* width: 20px; */
+  }
+  /* 電話 */
+  #contact_info .yoyaku .btn_area .btn_tel {
+    background-color: #888;
+    font-size: 16px;
+  }
+  #contact_info .yoyaku .btn_area .btn_tel::before {
+    content: url(../img/logo/tel-koki.png);
+    display: block;
+    /* width: 22px; */
+    height: auto;
+    margin: 2px auto;
+  }
+  /* 受付 */
+  #contact_info .uketsuke {
+    width: 100%;
+    margin: 5px auto;
+    padding: 15px 15px 20px;
+    background-color: rgba(255,255,255,.5);
+    /* margin: 5px 0; */
+    /* padding: 10px; */
+    font-size: 12px;
+    box-sizing: border-box;
+    /* text-align: center; */
+  }
+
+
+
+
+/* フッター */
+footer {
+  background-color: rgba(97, 91, 91, 0.05);
+  padding: 100px 0;
+  position: relative;
+  margin-top: 0;
+}
+.footer_container {
+  width: 935px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer_info {
+  width: 458px;
+  float: left;
+}
+.footer_logo img{
+  width: 458px;
+  height: auto;
+  margin-bottom: 25px;
+}
+.eigyo {
+  width: 458px;
+  margin-bottom: 25px;
+}
+.eigyo img{
+  width: 458px;
+  height: auto;
+}
+.tel_add {
+  overflow: hidden;
+  width: 458px;
+  overflow: hidden;
+  vertical-align: top;
+}
+.tel {
+  width: 260px;
+  float: left;
+}
+.tel_add .tel img {
+  width: 220px;
+  vertical-align: bottom;
+}
+.tel span {
+  display: block;
+}
+.fs12px {
+  font-size: 12px;
+}
+.add {
+  width: 190px;
+  float: right;
+}
+.fs13px {
+  font-size: 13px;
+  line-height: 20px;
+}
+#map_footer {
+  float: right;
+  width: 400px;
+  height: auto;
+  padding-top: 15px;
+}
+#map_footer img {
+  width: 400px;
+  height: auto;
+}
+
+
+/* Topに戻る */
+#page_top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+#page_top a {
+  background-color: #fdf387;
+  color: #144d62;
+  text-align: center;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+
+}
+#page_top a:hover {
+  background-color: #ffd563;
+  text-decoration: none;
+}
+#page_top a img {
+  width: 20px;
+  height: auto;
+  margin: 15px auto;
+}
+
+
+
+
+/* 施術内容の中身 */
+.setsumei {
+  line-height: 34px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* margin-bottom: 60px; */
+  width: 605px;
+}
+.method_img {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+.method_img img {
+  width: 70%;
+  height: auto;
+  /* margin-right: 60px; */
+}
+.method_exp_2box {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+.method_exp_2box .box_l {
+  width: 336px;
+  float: left;
+}
+.method_exp_2box .box_l p {
+  margin-top: 0;
+}
+.method_exp_2box .box_r {
+  float: right;
+  width: 224px;
+}
+.method_exp_2box .box_r div {
+  margin-bottom: 7px;
+}
+.method_exp_2box .box_r div img {
+  width: 224px;
+  height: 224px;
+  vertical-align: bottom;
+  /* margin-top: 7px; */
+}
+.fs13px {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+/* 早期改善 */
+.sokichiryo {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+}
+.setsumei-sokichiryo {
+  width: auto;
+  float: left;
+  width: 300px;
+}
+.fcolor_red {
+  color: #ba4242;
+}
+.sokichiryo div {
+  float: right;
+  height: 171px;
+  width: 244px;
+  margin-top: 45px;
+}
+.sokichiryo div img {
+  height: 171px;
+  width: 244px;
+}
+.setsumei_ea {
+  width: 600px;
+  margin: 0 auto;
+}
+.setsumei_ea h3 {
+  background-color: rgba(67, 91, 91, 0.1);
+  padding: 13px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.setsumei_ea .method_exp_2box .box_l p {
+  width: 320px;
+  margin: 10px auto 0;
+}
+.setsumei_ea .method_exp_2box .box_r .genri_img {
+  width: 208px;
+  margin: 20px auto 0;
+}
+.setsumei_ea .method_exp_2box .box_r .genri_img img {
+  width: 208px;
+  height: 330px;
+}
+
+/* デリバリー診察 */
+.content_text {
+  width: 600px;
+  margin: 40px auto;
+}
+.step_setsumei {
+  margin-bottom: 170px;
+}
+.step_setsumei_box {
+  width: 550px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.step_setsumei_box .setsumei_text {
+  position: relative;
+}
+.step_setsumei_box .setsumei_text .onebox {
+  padding: 50px 35px 40px;
+  height: auto;
+  width: 480px;
+}
+.step_setsumei_box .setsumei_text div {
+  background-color: #fff;
+  vertical-align: middle;
+  height: 207px;
+  padding: 0 35px;
+  display: table-cell;
+}
+.step_setsumei_box .setsumei_text div p {
+  margin: 0;
+}
+.step_setsumei_box .setsumei_text .step_icon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: transparent;
+  top: -35px;
+  left: 40px;
+  padding: 0;
+}
+.step_setsumei_box .setsumei_text .step_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.method_exp_1box {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+  /* margin-bottom: 150px; */
+}
+.m0 {
+  margin-bottom: 0;
+}
+.mt {
+  margin-top: 30px;
+}
+
+/* 施術いろいろ */
+.iroironaiyou {
+  margin-bottom: 150px;
+}
+.pl {
+  padding: 10px 25px;
+}
+.mtb {
+  margin: 0px;
+}
+.method_exp_2box_img_l {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.method_exp_2box_img_l .box_l {
+  width: 282px;
+  float: left;
+}
+.method_exp_2box_img_l .box_l img {
+  width: 285px;
+  height: auto;
+  vertical-align: bottom;
+}
+.method_exp_2box_img_l .box_r {
+  float: right;
+  width: 280px;
+}

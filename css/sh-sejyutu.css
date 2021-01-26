@@ -1,0 +1,509 @@
+@media screen and (max-width: 480px) {
+
+  body {
+    min-width: auto;
+    letter-spacing: 0;
+  }
+  header {
+    height: auto;
+    /* width: auto; */
+  }
+  .container {
+    width: 95%;
+    padding: 0;
+    /* overflow: hidden; */
+  }
+  #header_logo {
+    margin: 50px 15px 30px;
+    padding: 0;
+  }
+  #header_logo img {
+    width: 80%;
+    max-width: 320px;
+  }
+
+
+  /* ナビバー */
+  .nav{
+    display: none;
+    /* width: 90%; */
+    margin: 0 auto;
+  }
+
+
+  /* メイン-content */
+  #bread {
+    width: calc(100% - 10px);
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  /* メイン-conteiner */
+  .container {
+    width: 95%;
+    padding: 0;
+  }
+  .main_content {
+    width: auto;
+    float: none;
+  }
+  #midashi {
+    width: auto;
+  }
+  #midashi > img {
+    width: 95%;
+    height: auto;
+  }
+  #midashi h1 {
+    top: 15px;
+    left: 15px;
+    margin: 0;
+    width: calc(100% - 30px);
+    font-size: 34px;
+   }
+   h2 {
+     margin-top: 50px;
+   }
+   .concept {
+    width: auto;
+    margin: 30px 0 ;
+  }
+  .concept .concept_title {
+    display: flex;
+    padding-bottom: 0;
+  }
+  .concept .concept_title div {
+    float: none;
+  }
+  .concept .concept_title .icon img {
+    width: auto;
+  }
+  .concept .concept_title .title {
+    margin-left: 10px;
+    padding-top: 13px;
+    font-size: 22px;
+    letter-spacing: .2em;
+  }
+  .concept .exp {
+    margin-top: 0;
+    display: block;
+  }
+  .concept .exp .image {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    float: none;
+  }
+  .concept .exp .image-1 img {
+    margin-top: 0;
+}
+.concept .exp .text {
+  display: block;
+  width: 94%;
+  padding-left: 0;
+  margin: 10px auto 0;
+}
+
+/* 施術紹介 */
+.chiryo_list {
+  /* width: 95%; */
+  margin: 0 auto;
+}
+.chiryo_list .yoko2box, .chiryo_list .yoko3box, .chiryo_list .yoko4box {
+  width: auto;
+  /* margin: 0 auto; */
+  margin-bottom: 0;
+}
+.chiryo_list .yoko2box .float_l {
+  margin: 0 auto 10px;
+  max-width: 300px;
+  width: 90%;
+  float: none;
+}
+.chiryo_list .chiryo_syurui--yoko3, .chiryo_list .chiryo_syurui--yoko2 {
+  width: auto;
+  margin: auto;
+}
+
+
+/* サイドメニュー */
+.side {
+  height: auto;
+  width: auto;
+}
+.side_content {
+  width: 100%;
+  float: none;
+}
+.pconly {
+  display: none;
+}
+#contact_info {
+  margin: 50px auto 70px;
+}
+
+
+/* フッター */
+footer {
+  padding: 50px 0;
+}
+.footer_container {
+  width: auto;
+}
+.footer_info {
+  width: 90%;
+  float: none;
+  margin: 0 auto;
+}
+.footer_logo {
+  width: auto;
+  margin: 0 auto 25px;
+}
+.footer_logo img {
+  width: 100%;
+}
+.eigyo {
+  width: auto;
+  margin: 0 auto 25px;
+}
+.eigyo img {
+  width: 100%;
+}
+.tel_add {
+  width: auto;
+  text-align: center;
+}
+.tel_add .tel, .tel_add .add {
+  width: auto;
+  float: none;
+  margin-bottom: 5px;
+}
+#map_footer {
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#map_footer img {
+  width: 100%;
+  height: auto;
+}
+/* Topに戻る */
+.pt {
+  display: none;
+}
+#page_top {
+  /* display: none; */
+  /* width: 50%; */
+  /* position: fixed; */
+  bottom: 20px;
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+  /* ハンバーガーメニュー２ */
+  #barger {
+    background: #666666;
+    display: inline-block;
+    border-radius: 100%;
+    position: fixed;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index:600;
+  }
+  .circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  .bar {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 8px;
+    transition: ease 0.3s;
+  }
+  .topp {
+    top: 18%;
+  }
+  .middle {
+    top: 48%;
+  }
+  .bottom {
+    top: 78%;
+  }
+  .close .topp {
+    transform: rotate(45deg);
+    top: 48%;
+  }
+  .close .middle {
+    opacity: 0;
+  }
+  .close .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+  }
+  
+
+
+.nav0.close {
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+
+
+/* ナビバー０ */
+.nav0 {
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 500;
+  padding: 70px 15px 50px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.nav-0 {
+  width: auto;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+.nav0 >ul li {
+  display: block;
+}
+.top {
+  border-top: 1px dashed #555555;
+}
+.big {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #555555;
+  float: none;
+}
+.nav0 ul li a {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 16px;
+  letter-spacing: .1em;
+  color: #666666;
+}
+.nav0 ul li img {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.sponly {
+  display: inherit;
+  list-style: none;
+}
+.mini {
+  border-top: 1px dashed #c7c7c7;
+}
+.mini {
+  margin-left: 28px;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  border-bottom: none;
+  border-top: 1px dashed #cfcfcf;
+  padding: 0 0 0 9px;
+}
+
+
+
+
+/* contactページ */
+.uketsuke {
+  font-size: 18px;
+}
+
+
+ /* 骨盤ページ */
+ /* #midashi .midashi_title_moji {
+  float: left;
+  height: 80%;
+} */
+.midashi_title {
+  background-color: rgba(93, 100, 100, 0.1);
+  height: 40px;
+  padding: 20px 25px 10px;
+  vertical-align: bottom;
+}
+#midashi .midashi_title_logo img {
+  height: 100%;
+  width: auto;
+  border: 5px;
+}
+#midashi .midashi_title_moji img {
+  height: 90%;
+  width: 75%;
+  border: none;
+  padding-left: 10px;
+}
+.setsumei {
+  line-height: 34px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 95%;
+}
+.method_img img {
+  width: 80%;
+  height: auto;
+}
+.method_exp_2box .box_r { 
+  float: right;
+  width: auto;
+  height: 80%;
+}
+.method_exp_2box .box_r div img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+.method_exp_2box {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* 早期改善 */
+#midashi .midashi_title_moji-1 img {
+  height: 95%;
+  width: 65%;
+  border: none;
+  padding-left: 15px;
+}
+.sokichiryo {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+.sokichiryo div {
+  float: none;
+  height: 90%;
+  width: 90%;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+.setsumei-sokichiryo {
+  width: auto;
+  float: none;
+  width: 100%;
+}
+.sokichiryo div img {
+  height: 100%;
+  width: 100%;
+}
+h2 {
+  font-size: 19px;
+}
+.setsumei_ea {
+  width: 95%;
+  margin: 0 auto;
+}
+.method_exp_2box .box_l {
+  width: 100%;
+  float: none;
+}
+.setsumei_ea .method_exp_2box .box_r .genri_img {
+  width: 100%;
+  margin: 20px auto 0;
+}
+.setsumei_ea .method_exp_2box .box_r .genri_img img {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+
+/* デリバリー */
+.content_text {
+  width: 95%;
+  margin: 40px auto;
+}
+.step_setsumei {
+  width: 95%;
+  margin-bottom: 60px;
+}
+.step_setsumei_box {
+  width: 100%;
+  margin: 25px auto 0;
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+.step_setsumei_box .setsumei_text .onebox {
+  padding: 35px 30px 30px;
+  height: auto;
+  width: 480px;
+}
+.step_setsumei_box .setsumei_text .step_icon img {
+  width: 80%;
+  height: 80%;
+}
+
+
+/* 交通事故 */
+.method_exp_1box {
+  overflow: hidden;
+  width:  95%;
+  margin: 0 auto;
+}
+
+
+/* いろいろ */
+.method_exp_2box_img_l {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.method_exp_2box_img_l .box_l {
+  width: 100%;
+  float: none;
+}
+.method_exp_2box_img_l .box_l img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.method_exp_2box_img_l .box_r {
+  float: none;
+  width: 100%;
+}
+.iroironaiyou {
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+}

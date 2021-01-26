@@ -1,0 +1,39 @@
+@media screen and (max-width: 480px) {
+
+  .r-title {
+    margin: 30px auto 20px;
+  }
+  .content-text {
+    width: auto;
+  }
+  .ryokinhyo {
+    width: auto;
+    padding: 30px 20px 10px;
+    margin: 15px 0 60px;
+  }
+  .kado {
+    border-radius: 20px;
+  }
+  .ryokin-tbl {
+    width: 100%;
+  }
+  .ryokin-tbl td:first-child {
+    width: auto;
+    padding-left: 0;
+    padding-bottom: 5px;
+    float: left;
+  }
+  .ryokin-tbl td {
+    display: block;
+    width: auto;
+    padding-bottom: 30px;
+    padding-right: 0;
+    float: right;
+  }
+  .ryokin-chui {
+    text-align: left !important;
+    margin-top: 0;
+    padding-left: 1.2em;
+  }
+
+}

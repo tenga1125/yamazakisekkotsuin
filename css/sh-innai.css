@@ -1,0 +1,67 @@
+@media screen and (max-width: 480px) {
+
+  .setsumei {
+    width: auto;
+  }
+  .innai-syashin {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .kado {
+    border-radius: 20px;
+  }
+  .innai-syashin img {
+    width: 100%;
+  }
+  .syokai-text {
+    width: auto;
+    margin: 10px 0;
+  }
+  .yoko2img .kado img {
+    height: auto;
+    width: 100%;
+  }
+  .innai-syashin .mini-syashin {
+    width: auto;
+    height: 550px;
+    margin: 50px 0;
+  }
+  .innai-syashin .mini-syashin div img {
+    width: 150px;
+    height: auto;
+  }
+  .innai-syashin .mini-syashin .pos1 {
+    right: 30px;
+  }
+  .innai-syashin .mini-syashin .pos2 {
+    left: 20px;
+  }
+  .innai-syashin .mini-syashin .pos3 {
+    top: 350px;
+    left: 90px;
+  }
+  .yoko2img .kado {
+    margin-bottom: 5px;
+  } 
+
+  /* 治療機器紹介 */
+  .mbsp {
+    padding: 15px 20px 10px;
+    width: auto;
+    margin-bottom: auto;
+  }
+  .sp {
+      margin: 30px 0 20px;
+  }
+  .kiki {
+    width: auto;
+  }
+  .kiki-text {
+    padding: 10px 15px;
+  }
+    
+
+
+
+
+}

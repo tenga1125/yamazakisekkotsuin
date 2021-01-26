@@ -1,0 +1,121 @@
+#midashi img {
+  height: 350px;
+}
+#midashi h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  margin: 0;
+}
+.setsumei {
+  line-height: 34px;
+  font-size: 18px;
+  margin: 30px auto 40px auto;
+  width: 660px;
+}
+.innai-syashin {
+  width: 660px;
+  margin: 0 auto 125px auto;
+}
+.innai-syashin img {
+  width: 660px;
+  height: auto;
+  vertical-align: bottom;
+}
+.syokai-text {
+  width: 600px;
+  margin: 30px auto;
+}
+.yoko2img {
+  overflow: hidden;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.yoko2img .kado img {
+  vertical-align: bottom;
+  height: 300px;
+  width: auto;
+}
+
+.innai-syashin .mini-syashin {
+  overflow: hidden;
+  height: 580px;
+  width: 605px;
+  position: relative;
+  margin-top: 112px;
+  margin-bottom: 70px;
+}
+.innai-syashin .mini-syashin .pos1 {
+  position: absolute;
+  top: 0;
+  right: 90px;
+}
+.innai-syashin .mini-syashin .pos2 {
+  position: absolute;
+  top: 207px;
+  left: 80px;
+}
+.innai-syashin .mini-syashin .pos3 {
+  position: absolute;
+  top: 356px;
+  left: 201px;
+}
+.innai-syashin .mini-syashin div img {
+  width: 171px;
+  height: 184px;
+}
+.imgh-1 .kado img {
+  vertical-align: bottom;
+  height: 287px;
+  width: 300px;
+}
+h3 {
+  height: 21px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.kiki {
+  width: 600px;
+  margin: 0 auto;
+}
+.imgh-2 .kado img {
+  vertical-align: bottom;
+  height: 219px;
+  width: auto;
+}
+.kiki-text {
+  clear: both;
+  padding: 20px 15px 5px;
+}
+.sp {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.imgh-3 .kado img {
+  vertical-align: bottom;
+  height: 238px;
+  width: auto;
+}
+.mbsp {
+  margin-bottom: 50px;
+  width: 610px;
+}
+.imgh-4 .kado img {
+  vertical-align: bottom;
+  height: 270px;
+  width: auto;
+}
+.imgh-5 .kado img {
+  vertical-align: bottom;
+  height: 273px;
+  width: auto;
+}
+.imgh-6 img {
+  height: 353px;
+  width: auto;
+}

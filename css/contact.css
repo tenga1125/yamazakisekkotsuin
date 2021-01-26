@@ -1,0 +1,51 @@
+.uketsuke {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px;
+  font-size: 20px;
+  margin: 50px auto 133px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+.btn_area {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 50px; 
+}
+.btn_area a {
+  width: 49%;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 10px 0;
+  transition: .3s;
+}
+.dekame {
+  font-size: 20px;
+}
+.hosoku {
+  font-size: 14px;
+  display: block;
+}
+.btn_line {
+  background-color: #26B740;
+}
+.btn_tel {
+  background-color: #888;
+}
+.btn_line::before {
+  content: url(../img/logo/line-mini.png);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+.btn_tel::before {
+  content: url(../img/logo/tel.png);
+  display: block;
+  height: auto;
+  margin: 2px auto;
+}

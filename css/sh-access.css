@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px) {
+
+  #midashi img {
+    margin-bottom: 25px;
+  }
+  .setsumei {
+    width: auto;
+  }
+  .kado {
+    border-radius: 20px;
+  }
+  .map-area {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .map {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  #target {
+    width: 100%;
+    height: 450px;
+    margin: 40px auto;
+  }
+  footer {
+    margin-top: auto;
+  }
+
+
+
+
+
+
+}

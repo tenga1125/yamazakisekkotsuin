@@ -1,0 +1,57 @@
+#midashi img {
+  height: 410px;
+  margin-bottom: 40px;
+}
+.wf3 {
+  color: #fff;
+}
+.setsumei {
+  line-height: 34px;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 630px;
+}
+.mb_40px {
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+.furigana {
+  vertical-align: middle;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.incho {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto 200px;
+  /* margin: 40px 20px 200px; */
+  font-size: 14px;
+}
+.incho .photo {
+  width: 55%;
+  margin: 0 auto;
+  float: left;
+}
+.incho .photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.incho .txt {
+  float: right;
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.incho .txt .shomei {
+  display: block;
+  border-bottom: 1px dashed #ccbd96;
+  margin-bottom: 10px;
+}
